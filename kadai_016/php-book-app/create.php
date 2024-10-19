@@ -50,7 +50,7 @@
  
      // SQL文の実行結果を配列で取得する
      // 補足：PDO::FETCH_COLUMNは1つのカラムの値を1次元配列（多次元ではない普通の配列）で取得する設定である
-     $book_codes = $stmt_select->fetchAll(PDO::FETCH_COLUMN);
+     $genre_codes = $stmt_select->fetchAll(PDO::FETCH_COLUMN);
  } catch (PDOException $e) {
      exit($e->getMessage());
  }
